@@ -29,12 +29,12 @@
   },
   "homepage": "https://github.com/Janealter/ref-wchar-napi",
   "dependencies": {
-    "iconv": "2",
-    "ref-napi": "^1.4.2"
+    "iconv": "3",
+    "ref-napi": "^2.0.1"
   },
   "devDependencies": {
-    "bindings": "~1.2.0",
-    "mocha": "2",
+    "bindings": "~1.5.0",
+    "mocha": "7",
     "nan": "2"
   }
 }
