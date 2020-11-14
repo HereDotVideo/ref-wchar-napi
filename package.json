@@ -1,10 +1,10 @@
 {
   "name": "ref-wchar-napi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A ref \"type\" implementation of `wchar_t *` (a.k.a. wide string) backed by \"node-iconv\". Supports Node 6, 7, 8, 10, 12.",
   "main": "index.js",
   "scripts": {
-    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
+    "test": "node-gyp rebuild --directory test && mocha --expose-gc --exit"
   },
   "repository": {
     "type": "git",
@@ -30,11 +30,11 @@
   "homepage": "https://github.com/Janealter/ref-wchar-napi",
   "dependencies": {
     "iconv": "3",
-    "ref-napi": "^2.0.1"
+    "ref-napi": "^3.0.1"
   },
   "devDependencies": {
     "bindings": "~1.5.0",
-    "mocha": "7",
+    "mocha": "8",
     "nan": "2"
   }
 }
